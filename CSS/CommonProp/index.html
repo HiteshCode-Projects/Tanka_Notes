@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+           color:red;       /* color: red; Text Color By Name */
+           color: #ff0000;                   /* Text Color By Hex Code */
+           color: rgb(225, 0, 0);
+           color: rgba(225, 0, 0, 0.5);/* Text Color transparency(0 to 1) */
+
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 16px;
+           font-weight: bold;
+           font-style: italic;
+
+           text-align: center;
+           text-decoration: underline;
+           text-transform: uppercase;
+           line-height: 1.5;
+           /* space between lines- line-height */
+           letter-spacing: 10px;
+        }
+
+
+        div{
+            background-color: lightblue;
+            background-image: url('../../download.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        div{
+            width: 300px;  /*     Fixed Pixels /Size */
+            width: 50%;               /*    Percentage of parent */
+            width: 100vw;
+            max-width: 800px;  
+            /* Dont grow beyond this */
+
+           height: 100vh;
+           min-height: 200px;
+           /* At Least this tall */
+        } 
+    </style>
+</head>
+<body>
+    <p>Paragaph tag </p>
+    <div>
+        <h2>Hello Css</h2>
+    </div>
+</body>
+</html>
