@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: lightblue;
+            width: 200px;
+            height: 100px;
+
+            position: relative;
+            top: 30px;
+            left: 200px;
+        }
+
+        .box2{
+            position: absolute;
+            background-color: red;
+            right: 20px;
+            bottom: 20px;
+        }
+
+        button{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        nav{
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav style="background-color: red;">
+          <ul>
+            <li>Home</li>
+          </ul>
+    </nav>
+
+   <div class="box">
+
+    This div
+
+    <div class="box2">
+        This Is Inner Child Div
+    </div>
+
+
+   </div>
+
+   <button>
+    Help
+   </button>
+
+   <div style="height: 1000px;"></div>
+
+</body>
+</html>
