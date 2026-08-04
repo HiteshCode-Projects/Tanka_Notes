@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+
+            grid-template-rows: repeat(3,150px);
+            gap: 10px;
+        }
+
+        .box{
+            background: royalblue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            border-radius: 8px;
+        }
+      
+        .box-featured{
+            grid-column: span 2;
+            background: tomato;
+        }
+
+        .box-tall-item{
+            background: seagreen;
+            grid-row: span 2;
+        }
+
+        .box-big-featured{
+            background: purple;
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box-featured">Featured</div>
+        <div class="box">2</div>
+       
+
+        <div class="box-tall-item">Tall Item</div>
+        <div class="box">4</div>
+     
+
+        <div class="box-big-featured">Big Box</div>
+           <div class="box">6</div>
+           <div class="box">7</div>
+    </div>
+</body>
+</html>

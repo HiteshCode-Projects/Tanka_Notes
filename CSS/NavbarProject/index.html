@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial;
+        }
+
+        nav{
+            position: sticky;
+            top: 0; 
+            
+            background-color: #1F4E79;
+            color: white;
+            padding: 15px 30px;
+
+            box-shadow: 0 2px 4px black;
+
+            z-index: 100;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        main{
+            padding: 30px;
+            min-height: 2000px;
+        }
+
+        .backtop{
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: #C00000;
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            box-shadow: 0 2px 8px black;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .backtop:hover{
+            background-color: #8B0000;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">about</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <h1>Scroll Down To See Magic</h1>
+        <p>The Navbar Stays on Top</p>
+        <p>The Red Button Stays on bottom righ</p>
+        <p>This is How 90% Modern Webiste Works</p>
+    </main>
+
+    <a href="#top" class="backtop">🔝</a>
+</body>
+</html>

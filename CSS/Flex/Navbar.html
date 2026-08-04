@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+
+        body{font-family: Arial;}
+
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            background-color: #1F4E79;
+            padding: 15px 30px;
+            color: white;
+        }
+
+        .logo{
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MyShop</div>
+
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="nav-bottom">
+            <button class="btn btn-login">Login</button>
+            <button class="btn btn-signup">Sign up</button>
+        </div>
+    </nav>
+</body>
+</html>
