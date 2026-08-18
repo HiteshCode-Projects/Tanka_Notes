@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: xyz;
+            animation-duration: 2s;
+            border-radius: 50%;
+            animation-iteration-count: infinite;
+        }
+
+        /* @keyframes xyz{
+
+               from {background-color: red;}
+
+               to   {background-color: yellow;}
+
+        } */
+
+
+
+        @keyframes xyz{
+            0% {background-color: red; transform: translateX(100px); opacity: 0;}
+
+            25% {background-color: yellow; transform: translateY(100px); opacity: 0.5;}
+            
+            50% {background-color: blue;transform: translateX(-100px); opacity: 0.5;}
+
+            100% {background-color: brown;transform: translateY(-100px); opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+   </div>
+</body>
+</html>

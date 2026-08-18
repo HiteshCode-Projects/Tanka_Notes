@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 80%;
+            font-size: 18px;
+            background-color: brown;
+        }
+
+        /* When Screen is 768px or smaller  */
+        @media (max-width:768px) {
+            
+            .container{
+                width: 100%;
+                font-size: 12px;
+            }
+        }
+
+         @media (max-width:480px) {
+            
+            .container{
+                 padding: 10px;
+                 background-color: seagreen;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Hello Tank</h2>
+    </div>
+</body>
+</html>
