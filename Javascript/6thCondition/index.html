@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Condition - Decision
+
+        //1. if(condition)  - Output Only if It is True
+
+        const age = 20
+
+        if(age>=18){
+            console.log("You are an adult")
+        }
+
+
+
+        //2. if()-True else-False
+
+        const age1 = 15
+
+        if(age1 >= 18){
+              console.log("Adult - Can Vote")
+        }else{
+             console.log("You are minor")
+        }
+
+        //Multiple Condition - else if
+
+        const marks = 75
+
+        if(marks >=90){
+            console.log("Grade A")
+        }
+        else if(marks >= 75){
+            console.log("Grade B")
+        }
+        else if(marks >=60){
+            console.log("Grade C")
+        }
+        else{
+            console.log("Need Improvment")
+        }
+
+
+        //Ternary operators - Conditon in one single Line
+
+        const age2 = 20
+
+        const message = age2 >= 18 ? "Adult"  : "Minor"
+
+        console.log(message)
+
+        const items = 5
+        const text = items === 1 ? "1 Item ": `${items} items`
+
+        //5 items
+
+
+        //Switch Statment - Multiple Choices
+
+        const day = "monday"
+
+        switch(day){
+            case "monday":
+                console.log("Start of week")
+            break;    
+
+            case "wednesday":
+                console.log("Midweek")
+            break;    
+
+            case "friday":
+                console.log("Weekend Tom")
+            break;    
+
+            case "saturday":
+            case "sunday":
+                console.log("Weekend")
+
+            break;    
+
+            default:
+                console.log("It is a weekday")    
+
+
+
+        }
+    </script>
+</body>
+</html>

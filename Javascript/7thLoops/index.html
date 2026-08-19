@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Loop : DOing Same Task Again and Again
+        // Condition True - Loop starts . Condition false Loop Stops
+
+        //1. for(start point; ending/condition; increment/decrement) - Start point and End Point
+
+        //Print Number 1 to 10
+        for(let i = 1; i <=10; i++){
+             console.log(`Iteration ${i}`)
+        }
+
+        //Print Even Numbers 2 to 20
+        for(let j = 2; j <=20; j+=2){
+          console.log(`Even Numbers ${j}`)
+        }
+
+
+        //while loop
+        //while(Conditon)
+
+        let count = 1
+
+        while(count <=5){
+            console.log("Hello Tanka")
+            count++
+        }
+
+        // let password = "wrong"
+
+        // while(password !== "secret1234"){
+        //     password = prompt("Enter password")
+        // }
+        // console.log("Access Granted")
+
+
+        //Loop through Array for of
+        const fruits = ["apple" , "mango" , "kiwi"]
+
+        for(let abc of fruits){
+            console.log(abc)
+        }
+
+        //Break(Stop) and Continue(skip)
+
+        for(let k = 1; k <=10; k++){
+
+             if(k == 5){
+                break;  //Stop The Loop Completely
+             }
+
+             console.log(k)
+
+        }
+
+        //Conitnue - Skip to next iteration
+
+        for( p = 1; p<=10; p++){
+
+            if(p % 2==0){
+                continue;   //Skip Even Numbers
+            }
+                  
+            console.log(p)
+
+
+        }
+
+        //Do while - Run Atleast for 1 time
+
+        let number = 7
+
+        do{
+             console.log("Good Night")
+
+        }while(number<5)  //7 < 5 : False
+
+        
+
+
+    </script>
+</body>
+</html>
