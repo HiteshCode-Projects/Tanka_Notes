@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //FizzBuzz - 
+        //1.Problem Statement : From Numbers 1 to 15 - Print Fizz If it is Divisble by 3.Print Buzz Divisble by 5
+        //FizzBuzz Both Disvisble 5 , 3 else print Number
+
+        function fizzBuzz(num){
+
+            for(let i = 1; i <=num;i++){
+
+               if(i % 3 === 0 && i % 5 === 0){
+                   console.log("FizzBuzz")
+               }else if(i % 3 === 0){
+                console.log("Fizz")
+               }else if(i % 5 === 0){
+                console.log("Buzz")
+               }else{
+                console.log(i)
+               }
+
+            }
+
+        }
+        fizzBuzz(15)
+
+        //2. Check if Prime 
+        function isPrime(num){
+
+            if(num<2) return false;
+
+            for(let j =2; j <num; j++){
+                if(num % j === 0) return false    
+            }
+
+            return true
+
+        }
+
+        console.log(isPrime(7))
+        console.log(isPrime(8))
+
+
+        //3. Reserver a String
+
+        function reverseString(str){
+
+            //length - Total Number of Characters- It Starts the count with 1
+
+             let rev = ""
+
+             for(let k = str.length-1; k >=0; k--){
+                rev+= str[k]
+             }
+        }
+        reverseString("hello")  //olleh
+
+
+        //4.Check Palindrome : String === revString
+
+        //5.Find factorial - Multplication
+          //  4! : 4*3*2*1 = 24
+
+        function factorial(n){
+
+            let result = 1
+
+            for(let p =1 ; p<=n;p++){
+
+                result*=p;
+
+            }
+
+            return result
+
+
+
+        }
+      console.log( factorial(5))  
+
+        //6. Fibonacci Series
+
+        //7. Find Max in 3 numbers- Math Object Method
+
+        //8. Sum of Digits- Math object
+
+        //9. Count Vowels - String Method
+
+        //10. Convert kg to grams
+
+        //11. Calculate tip
+
+        //12. check year is leap year
+
+        //13. Numbers To words (simple 1- 9)
+
+        //14. Check if String contains a substring - String Method
+
+        //15. Calculate age from birth year- Date object
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Function are used to a Specific TASK
+
+        //1.Basic
+
+        function greet(){
+            //Body-Instruction-Task
+            console.log("Good evening user")
+        }
+        greet()   //Calling Function to  do task
+
+
+        //2. function with parameter(parameter/arguments)
+
+        function greeting(name){
+            console.log(`Hello ${name}`)
+        }
+        greeting("Tanka")
+        greeting("Ayush")
+        greeting("John")
+
+        //Reuseable code - one function , used multiple times
+
+
+        //3. function - return type
+
+        function add(a,b){
+            return a+b
+        }
+        
+        const result =  add(10,5)
+        console.log(result)
+
+        const total = add(10,20) + add(5,5)
+        console.log(total)  
+
+
+        //4. Default Parameter
+        function greetings(name = "guest"){
+             
+             console.log(`Hello ${name}`)
+        }
+        greetings()
+        greetings("mike")
+
+
+        //5.Arrow Function - () paranthesis Bracket
+
+         const addd =  (x,y)=>{
+               
+            return x+y
+         }
+         console.log(addd(2,2))
+
+
+         //Logic in one SIngle Line
+         const addd1 = (p,q)=> p+q;
+
+         console.log(addd1(1,2))
+
+
+         //6. Single Parameter - No Paranthese needed
+         const double =   num=>num*2
+
+         console.log(double(2))
+
+
+         //7. No Parameters - use empty parathese
+        const abc =  ()=> console.log("Hello")
+     </script>
+</body>
+</html>
