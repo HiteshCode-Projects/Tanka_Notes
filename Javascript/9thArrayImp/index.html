@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Array :multiple Data . Index no starts with 0
+
+        const fruits = ["apple", "banana" ,"mango","orange"]
+
+        //In js can hold any data type
+        const mixed = [1 ,"hello",true,null]
+
+        console.log(fruits[2])  //mangi
+        console.log(fruits[5])  //undefined
+
+        //Get the length - Total Items in Array
+        console.log(fruits.length)   //4
+
+        //Get the last data/item
+        console.log(fruits[fruits.length - 1])  //orange
+
+        //Modern .at()
+        console.log(fruits.at(-1))  
+           //negative index starts with -1 = from end
+
+           //Update the data
+        fruits[1] = "grape" 
+        
+        //Add at End
+        fruits.push("Kiwi")
+
+        //Add at First
+        fruits.unshift("Watermelon")
+
+        //Remove at End
+        fruits.pop()
+
+        //Remove at start
+        fruits.shift()
+
+
+        //Remove /Inser at Middle splice(indexno, 1-remove , 0-insert without removing,newDataValue)
+
+        const items = ["a" , "b" ,"c" ,"d" ,'e']
+
+        items.splice(1,1)
+        console.log(items)
+
+      items.splice(2,0,"x","y")
+        console.log(items)
+
+
+        //Most Important Methods of Array
+
+
+        const numbers = [1,2,3,4,5]
+
+        //Print Each Number
+        numbers.forEach( (x)=>{
+                  console.log(x)
+        })
+
+
+        //Index No
+          numbers.forEach( (x,index)=>{
+                  console.log(`Index ${index} , ${x}`)
+        })
+
+        //MAP - Transform Each Data Into NEw
+
+        const num = [1,2,3,4,5]
+
+       const doubled =  num.map( y=> y*2  )
+       console.log(doubled)
+
+
+       //filter()  Keep Only Data that matches
+
+       const num1 = [1,2,3,4,5,6,7,8,9,10]
+
+       //kEpp only even Numbers
+    //    const evens = num1.filter( p => p % 2 === 0)
+     
+     const evens = num1.filter( p => p > 5)
+       console.log(evens)
+
+
+       //reduce - Combile ALl Items Into one Value
+       
+            const num2 = [1,2,3,4,5]
+
+            const sum = num2.reduce(  (total , q)=> total + q , 0)
+            console.log(sum)
+
+            //find()  - Get the FIRST match Item 
+
+            const user = [
+                {id:1,name:'iphone'},
+                {id:2,name:'laptop'},
+                {id:3,name:'shoes'},
+                
+
+    ]
+
+    const result =   user.find( u => u.id === 2)
+    console.log(result)
+
+
+    const ages = [22,18,30,15]
+    // some() at least ONE matches
+
+    console.log(ages.some( age=> age < 18   ))   //true
+
+    //every()  Do ALL matches 
+
+    console.log(ages.every(age => age>=18))   //false 15 < 18
+
+    console.log(ages.every(age => age>=10))  //True 
+    
+    //includes()  - Is this Data is Present
+    const fruitss = ["apple" ,"mango", "banana"]
+    console.log(fruits.includes("apple"))  // boolean - true
+
+    //sort()  order the items
+
+    const names = ["charlie" ,"alice" ,"bob"]
+    names.sort()
+    console.log(names)
+
+    //Numbers - sort() work werid by default
+    const numsss = [10,1,5,30,2]
+    numsss.sort()  //It will consider number as string default
+    console.log(numsss)
+
+    //Numbers - comapre function
+    numsss.sort((a,b)=>a-b)   //asecnding
+    console.log(numsss)
+
+    numsss.sort((a,b)=>b-a) //descending
+    console.log(numsss)
+
+
+    //slice() - Break and concat()-Add
+
+    const fru = ["apple", "banana","mango", "orange","grape"]
+
+    //  slice(start,end)  //end-1  //end not considered
+
+    const some =  fru.slice(1,3)  //3-1
+    console.log(some)
+
+    //concat() -combine 
+    const a= [1,2,3]
+    const b =[4,5,6]
+    console.log(a.concat(b))
+
+    </script>
+</body>
+</html>

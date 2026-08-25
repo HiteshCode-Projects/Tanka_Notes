@@ -88,9 +88,35 @@
 
         //7. Find Max in 3 numbers- Math Object Method
 
-        //8. Sum of Digits- Math object
+        //8. Sum of Digits- 
+        function sumOfDigits(num){
+
+            let sum = 0;
+
+            while(num > 0){
+                sum+= num%10;
+                num = Math.floor(num/10)  //Removing Decimal means floor 2.5 = 2 , 2.9 = 2
+            }
+
+            return sum
+
+        }
 
         //9. Count Vowels - String Method
+            
+        function countVovwel(strs){
+            let count = 0;
+
+            const vowels = "aeiouAEIOU"
+
+            for(const char of strs){
+                  if(vowels.includes(char)) count ++
+            }
+
+            return count
+        }
+         countVovwel("Hello")
+
 
         //10. Convert kg to grams
 
@@ -98,11 +124,27 @@
 
         //12. check year is leap year
 
-        //13. Numbers To words (simple 1- 9)
+        //13. Numbers To words (simple 1- 5)
+        function numtowrord(num){
+            const words = ["zero", "one","two","three","four","five"]
+
+            return words[num] || "out of range"
+        }
+      console.log(numtowrord(4))
 
         //14. Check if String contains a substring - String Method
+        // "Hello world"  , "world"  - True
+        const contains = (str,search) => str.toLowerCase().includes(search.toLowerCase())
+
+        console.log(contains("hello WORLD", "World"))
+
 
         //15. Calculate age from birth year- Date object
+        function calculateAge(birthYear){
+                 const currentYear = new Date().getFullYear();
+                 return currentYear - birthYear
+        }
+        console.log(calculateAge(2000))  //
     </script>
 </body>
 </html>
