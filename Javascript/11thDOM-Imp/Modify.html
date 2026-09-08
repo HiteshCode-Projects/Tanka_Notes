@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Original title</h1>
+    <p id="msg">Original Message</p>
+
+    <div id="container">
+
+    </div>
+
+    <input id="search" type="text" value="Hello">
+
+    <a>Anchor tag/Home</a>
+
+    <script>
+       
+
+        const title = document.querySelector("#title")
+
+
+        //Change text only(Safe , Prevents HTML injection)
+
+        title.textContent = "New Title"
+
+          //Change HTML (Allows tags - use carefully)
+        const msg = document.querySelector("#msg")
+        msg.innerHTML = "<strong>Bold Message </strong>"
+
+        //Read Text
+        console.log(title.textContent)
+
+        //Get /Set input value
+        const search = document.querySelector("#search")
+        console.log(search.value)  //Get the Value which is written inside input tag
+
+        search.value = "World"  //Change It
+
+        //Inset HTML into conatiner
+        const conatiner = document.querySelector("#container")
+
+        conatiner.innerHTML = `
+        <h2>Dyanmic Content</h2>
+        <p>This was Added By js</p>
+        
+        `
+
+
+        //Modify CSS - Style
+
+        //Method 1 Direct Style - camelCase
+        
+        title.style.color = "red" 
+        title.style.fontSize = "40px"
+        title.style.backgroundColor = "yellow"
+
+
+        //Method 2 ADD/REMOVE CSS CLASSESS
+        title.classList.add("active")
+        title.classList.remove("hidden")
+        title.classList.toggle("dark-mode") //add is not there ,removes if there
+        title.classList.contains("active")  //return true or false
+
+        //Replace ALL CLASSES AT ONCE
+        title.className = "big bold red"
+
+
+        //Modify attribute
+        const link = document.querySelector("a")
+
+        //get Attrbute
+        console.log(link.getAttribute("href"))
+
+        //Set Attribute
+        link.setAttribute("href" , "https://google.com")
+        link.setAttribute("target" , "_blank")
+
+        //remove 
+        link.removeAttribute("download")
+
+        //Common one have shorts
+
+        const img = document.querySelector("img")
+        img.src = "Image Link or Image name"
+        img.alt = "New Des"
+        img.id = "image Main"
+    
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <h1 id="title">Welcome</h1>
+   <h1>Another Heading</h1>
+
+   <p class="message">Hllo world</p>
+   <p class="message">Another Message</p>
+
+   <p>ANother Paragaph</p>
+
+   <button class="btn">Click me</button>
+
+
+    <script>
+        //DOM - Doucment(webpage-HTML) Object Model
+        //Connection Between HTML(Webpage) and JS
+
+        //document = webpage
+
+        //Selecting Method-Process To Select HTML Tag in JS
+        //1 . By ID When you have a unique Element-Tag
+
+      const title =   document.getElementById("title") //h1 tag select in js
+      console.log(title)
+      console.log(title.textContent)
+
+      //2. By class
+      const messages =  document.getElementsByClassName("message")
+      console.log(messages)
+      console.log(messages[1])
+      console.log(messages[1].textContent)
+
+
+      //3. by TagName
+      const allParagraphs = document.getElementsByTagName("p")
+      console.log(allParagraphs)
+
+
+      //querySelector() It follows CSS Selector Rule - #Idname , .className , TagName
+      //- It will Only Slect The first Element/Tag-BEST FOR ONE TAG/ELEMENT
+
+      const firstMessage = document.querySelector(".message")
+      console.log(firstMessage)
+      const button = document.querySelector(".btn")
+      console.log(button)
+
+       //querySlectorAll()
+       const allMessage =   document.querySelectorAll(".message")
+       console.log(allMessage)
+
+    </script>
+</body>
+</html>

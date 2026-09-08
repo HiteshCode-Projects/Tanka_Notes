@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h2>Hello HTML</h2>
+
+    <script>
+        //1. Create Element-Tag
+
+        const newDiv = document.createElement("div")
+
+        //2. Add Content and Attruute
+        newDiv.textContent = "I was Created by js"
+        newDiv.classList.add("card")
+        newDiv.id = "dyanmic-div"
+
+        //3. Add in it page
+        document.body.appendChild(newDiv)  //Add toend of body
+
+        const container = document.querySelector("#container")
+
+        container.appendChild(newDiv)  //adds inside container
+
+
+    </script>
+</body>
+</html>
